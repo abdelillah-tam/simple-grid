@@ -1,0 +1,53 @@
+.add-note {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 16px;
+  a {
+    color: #8784d9;
+    margin-left: 8px;
+    text-decoration: none;
+  }
+}
+.notes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  margin: 20px;
+  column-gap: 5.8vw;
+  row-gap: 6vh;
+  li {
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0.5px 0.5px 5px lightgray;
+    border-radius: 2px;
+    h1 {
+      font-size: 18px;
+      font-weight: normal;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+    div {
+      height: 80%;
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-size: 14px;
+        font-weight: lighter;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 8px;
+      }
+    }
+  }
+}

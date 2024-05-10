@@ -1,0 +1,18 @@
+
+ul {
+    list-style: none;
+    background-color: purple;
+    height: 100vh;
+    padding: 0.2%;
+    li{
+        display: flex;
+        input {
+            width: 100%;
+            margin-top: 16px;
+        }
+        .type-note{
+            height: 50vh;
+            font-size: 16px;
+        }
+    }
+}
